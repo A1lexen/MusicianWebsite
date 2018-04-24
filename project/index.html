@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/index_player.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav navbar-fixed-top">
+        <div class="container logo">
+            <img src="images/logo.png" alt="LOGO Image">
+        </div>
+        <div class="menu">
+            <ul class="list">
+                <li><a href="https://vk.com" target="_self">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="wrap">
+        <!--<div id="arrow-left" class="arrow"></div>-->
+        <div class="slider">
+            <div class="slide slide1"></div>
+            <div class="slide slide2"></div>
+            <div class="slide slide3"></div>
+            <div class="slide slide4"></div>
+        </div>
+        <!--<div id="arrow-right" class="arrow"></div>-->
+    </div>
+
+    <div class="container">
+            <div class="column add-bottom">
+                <div id="mainwrap">
+                    <div id="nowPlay">
+                        <span class="left" id="npAction">Paused...</span>
+                        <span class="right" id="npTitle"></span>
+                    </div>
+                    <div id="audiowrap">
+                        <div id="audio0">
+                            <audio preload id="audio1" controls="controls">Your browser does not support HTML5 Audio!</audio>
+                        </div>
+                        <div id="tracks">
+                            <a id="btnPrev">&larr;</a>
+                            <a id="btnNext">&rarr;</a>
+                        </div>
+                    </div>
+                    <div id="plwrap">
+                        <ul id="plList"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/index_player.js"></script>
+    
+</body>
+</html>

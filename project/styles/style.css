@@ -1,0 +1,144 @@
+html, body {
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.logo {
+    padding-top: 13px;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(53, 53, 53, 0.3);
+    z-index: 1;
+}
+
+.list {
+    opacity: 1;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.list li {
+    font-size: 20px;
+    line-height: 50px;
+    padding-right: 50px;
+    display: inline;
+    position: relative;
+    border-bottom: 1px solid rgb(39, 180, 133);
+    transition: all 0.5s;
+}
+
+.list li a {
+    padding-left: 2px;
+    color: white;
+}
+
+/*HOVER ANIMATION*/
+.list li a:hover {
+    text-decoration: none;
+}
+
+.list li::after {
+    transition: all 0.5s;
+}
+
+.list li::before,
+.list li::after {
+    background-color: rgb(39, 180, 133);
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+
+.list li::after {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 0;
+}
+.list > li:hover::after{   
+    width: 100%;
+}
+/*HOVER ANIMATION*/
+
+.list:last-child {
+    padding-right: 30px;
+}
+
+/*SLIDER IMAGES*/
+.wrap {
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.slider {
+    position: relative;
+    height: 100%;
+}
+
+.slide {
+    position: relative;
+    display: block;
+    float: left;
+    height: 100%;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.slide1 {background-image: url('../images/sliderimg1.jpeg');}
+.slide2 {background-image: url('../images/sliderimg2.jpeg');}
+.slide3 {background-image: url('../images/sliderimg3.jpeg');}
+.slide4 {background-image: url('../images/sliderimg4.jpeg');}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 60vh;
+    margin-top: -50px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    z-index: 1;
+}
+
+#arrow-left {
+    border-width: 30px 40px 30px 0px;
+    border-color: transparent #fff transparent transparent;
+    left: 0;
+    margin-left: 30px;
+}
+
+#arrow-right {
+    border-width: 30px 0px 30px 40px;
+    border-color: transparent transparent transparent #fff;
+    right: 0;
+    margin-right: 30px;
+}
+
+/*SLIDER IMAGES*/
+
+@media (max-width: 1642px) {
+    .logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .list {
+        margin-left: 30px;
+    }
+
+    .list  li  a {
+        padding-left: 2.5em;
+    }
+}
