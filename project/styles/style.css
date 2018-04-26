@@ -17,6 +17,10 @@ html, body {
     z-index: 1;
 }
 
+.menu-icon {
+    display: none;
+}
+
 .list {
     opacity: 1;
     list-style: none;
@@ -129,6 +133,13 @@ html, body {
 /*SLIDER IMAGES*/
 
 @media (max-width: 1642px) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
     .logo {
         display: flex;
         flex-direction: column;
@@ -143,5 +154,23 @@ html, body {
 
     .list  li  a {
         padding-left: 2.5em;
+    }
+}
+
+@media (max-width: 560px) {
+    .menu-icon {
+        display: block;
+        padding-top: 5px;
+        color: white;
+    } 
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .list {
+        display: none;
     }
 }
