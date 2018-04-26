@@ -33,3 +33,7 @@
     color: white;
     padding-right: 6px;
 }
+
+#play-button:hover{
+    transform: scale(1.6);
+}
