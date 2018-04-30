@@ -1,3 +1,4 @@
+//SLIDER BEGIN
 $(document).ready(function(){
     var slideCount = $('.wrap .slider .slide').length;
     var slideWidth = $('.wrap .slider .slide').width();
@@ -34,9 +35,20 @@ $(document).ready(function(){
         
     });
 });
+//SLIDER END
 
 $(window).on('scroll', ()=>{
     if($(window).scrollTop())
         $('nav').addClass('black');
     else $('nav').removeClass('black');
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
