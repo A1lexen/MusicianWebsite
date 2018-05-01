@@ -17,7 +17,7 @@ html, body {
     margin: 0 auto;
     top: 30%;
     left: 50%;
-    color: rgb(234, 254, 255);
+    color: rgb(238, 254, 255);
     -webkit-text-stroke: 0.5px rgb(80, 80, 80);
     font-size: 40px;
     text-align: center;
@@ -31,7 +31,7 @@ html, body {
     position: fixed;
     width: 100%;
     background-color: rgb(53, 53, 53, 0.3);
-    z-index: 1;
+    z-index: 2;
 }
 
 .black {
@@ -175,7 +175,12 @@ html, body {
     }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 830px) {
+    #quote {
+        top: 10%;
+        width: 90%;
+    }
+    
     #menu-icon {
         font-size: 13px;
         display: block;
